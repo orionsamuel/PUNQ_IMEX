@@ -1,0 +1,44 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Ajuste_Hist_obj - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1B.tmp" with contents
+[
+/check:bounds /compile_only /dbglibs /debug:full /nologo /traceback /warn:argument_checking /warn:nofileopt /module:"Debug/" /object:"Debug/" /pdbfile:"Debug/DF60.PDB" 
+"D:\flavio\mestrado\fase3\PUNQ_IMEX\contamina.for"
+]
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1C.tmp" with contents
+[
+kernel32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/Ajuste_Hist_obj.pdb" /debug /machine:I386 /out:"Debug/Ajuste_Hist_obj.exe" /pdbtype:sept 
+.\Debug\Ajuste_Hist_obj.obj
+.\Debug\AjusteHist_Complex.obj
+.\Debug\cmplx_imex.obj
+.\Debug\complex.obj
+.\Debug\contamina.obj
+.\Debug\estat_complex.obj
+.\Debug\estat_inund.obj
+.\Debug\gasdev.obj
+.\Debug\inp_cmplx1.obj
+.\Debug\inp_cmplx2.obj
+.\Debug\inp_x_inund.obj
+.\Debug\zera_cube.obj
+.\Debug\zera_mat.obj
+.\Debug\zera_vet.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1C.tmp"
+<h3>Output Window</h3>
+Compiling Fortran...
+D:\flavio\mestrado\fase3\PUNQ_IMEX\contamina.for
+Linking...
+
+
+
+<h3>Results</h3>
+Ajuste_Hist_obj.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

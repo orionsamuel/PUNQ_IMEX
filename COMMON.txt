@@ -1,0 +1,50 @@
+  CHARACTER*30INPARDAT, INFDAT, SUPDAT, TRUTHMODEL,
+     .MODCOMPLX, DOCUMENTA, ESTCOMPLX, ESTINUND, MODINUND, PERMXTRUTH,
+     .PERMZTRUTH,	PORODAT, POROTRUTH, PERMXDAT, PERMZDAT,
+     .PUNQS3DAT, ACTIVEBLK, PUNQS3_RPT_WCUT_DAT,
+     .PUNQS3_RPT_BHP_DAT,PUNQS3_RPT_GOR_DAT, PUNQS3_RPT_WCUT_OUT,
+     .PUNQS3_RPT_BHP_OUT,PUNQS3_RPT_GOR_OUT,
+     .PUNQS3_MELHOR_DAT, PUNQS3_RPT_MELHOR_DAT,
+     .PUNQS3_RPT_MELHOR_OUT, PUNQS3_PIOR_DAT, PUNQS3_RPT_PIOR_DAT,
+     .PUNQS3_RPT_PIOR_OUT, ERRORDAT, POROMELHOR, PERMXMELHOR,
+     .PERMZMELHOR, POROPIOR, PERMXPIOR, PERMZPIOR,HOTSTARTDAT,
+     .HOTSTARTOUT
+c
+      character*300 cmd
+      character*80 DIR
+      LOGICAL MODINUND_FLAG, MODCOMPLX_FLAG, HOTSTART_DAT_FLAG,
+     .	HOTSTART_OUT_FLAG
+c
+      integer Npocos, Nmed_wcut, Nmed_bhp, Nmed_gor, Npor,
+     .n_l, n_inund, gamma, flag, p, q, ic, N_pairs,
+     .n_active_blocks, i, jpor, NF,n_prop
+c
+      real Func, wcutobs, wcutcal, bhpobs, bhpcal, gorobs,
+     .gorcal, por_min, por_max, sum_std, sum_por, gs
+	real(4) tempo_total
+c
+      REAL std_k, std_wcut, std_bhp, std_gor, lambda_por_glb, delta
+c
+      real ruido,inund, variacao
+      real, allocatable:: active_blocks(:), por_real(:),
+     .permx(:), permz(:), inf_por(:), sup_por(:),
+	1 permx_real(:),por_truth(:), permH_truth(:) 
+c
+      real, allocatable:: wcut_obs(:,:), wcut_cal(:,:),
+     .bhp_obs(:,:), bhp_cal(:,:), gor_obs(:,:), gor_cal(:,:),
+     .por(:), x(:,:), r(:,:)
+c
+      real, allocatable:: f(:), g(:), h(:), xc(:), x_real_total(:),
+     .avg_por(:), std_por(:), tempo_bhp(:), tempo_gor(:),
+     .tempo_wcut(:), x_inund(:,:), int_active(:), reserv_total(:),
+     .int_real_active(:),inf_por_reserv_total(:),
+     .sup_por_reserv_total(:), x_real(:)
+     
+
+C
+	character*10, allocatable:: yymmdd_wcut(:), yymmdd_bhp(:),
+     .yymmdd_gor(:)
+
+      CHARACTER*10 shutin_dates(28)
+	integer(4) iseed, iy
+c
