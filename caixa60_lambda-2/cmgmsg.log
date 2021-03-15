@@ -1,0 +1,619 @@
+2003-09-08 10:41:18     File: sr2yacc.C  Line: 152
+Syntax error on record 521 of sr2 file "punqs3".
+
+2003-09-08 10:41:20     File: sr2yacc.C  Line: 152
+Syntax error on record 521 of sr2 file "punqs3".
+
+2003-09-08 10:41:21     File: sr2yacc.C  Line: 152
+Syntax error on record 521 of sr2 file "punqs3".
+
+2003-09-08 10:41:21     File: sr2yacc.C  Line: 152
+Syntax error on record 521 of sr2 file "punqs3".
+
+2003-09-08 10:41:22     File: sr2yacc.C  Line: 152
+Syntax error on record 521 of sr2 file "punqs3".
+
+2003-09-08 10:41:22     File: sr2yacc.C  Line: 152
+Syntax error on record 521 of sr2 file "punqs3".
+
+2003-09-08 10:41:25     File: sr2yacc.C  Line: 152
+Syntax error on record 521 of sr2 file "punqs3".
+
+2003-09-09 09:50:12     File: applic.cpp  Line: 72
+CMG programs currently require that a period (.) be used for
+the decimal point indicator.
+
+2004-04-07 15:55:32     File: getagrid.cpp  Line: 52
+Unexpected return value from call.
+
+2004-04-07 15:55:32     File: sr2open.cpp  Line: 136
+There is no grid property in this file.
+
+2004-04-07 15:55:33     File: setdatasource.cpp  Line: 57
+An Internal Error has occurred. Please report this to CMG.
+E-Mail support@cmgl.ca or FAX 403-282-6495
+
+2004-07-27 14:08:28     File: alldsmgr.cpp  Line: 123
+Unable to construct requested DataSource object.
+
+2004-07-27 14:08:28     File: sr2open.cpp  Line: 92
+Unable to construct requested DataSource object.
+
+2004-07-27 14:10:39     File: resgbview.cpp  Line: 2274
+Grid not found. File will not be saved.
+
+2004-07-30 15:04:33     File: grid2.cpp  Line: 208
+Block (10,22,4) does not exist.
+(i,j,k) must be within (1,1,1) to (10,14,5).
+
+2004-07-30 15:04:37     File: grid2.cpp  Line: 208
+Block (10,22,5) does not exist.
+(i,j,k) must be within (1,1,1) to (10,14,5).
+
+2004-07-30 15:04:38     File: grid2.cpp  Line: 208
+Block (9,17,4) does not exist.
+(i,j,k) must be within (1,1,1) to (10,14,5).
+
+2004-07-30 15:04:38     File: grid2.cpp  Line: 208
+Block (9,17,5) does not exist.
+(i,j,k) must be within (1,1,1) to (10,14,5).
+
+2004-07-30 15:04:39     File: grid2.cpp  Line: 208
+Block (17,11,3) does not exist.
+(i,j,k) must be within (1,1,1) to (10,14,5).
+
+2004-07-30 15:04:39     File: grid2.cpp  Line: 208
+Block (17,11,4) does not exist.
+(i,j,k) must be within (1,1,1) to (10,14,5).
+
+2004-07-30 15:04:40     File: grid2.cpp  Line: 208
+Block (11,24,3) does not exist.
+(i,j,k) must be within (1,1,1) to (10,14,5).
+
+2004-07-30 15:04:40     File: grid2.cpp  Line: 208
+Block (11,24,4) does not exist.
+(i,j,k) must be within (1,1,1) to (10,14,5).
+
+2004-07-30 15:04:41     File: grid2.cpp  Line: 208
+Block (15,12,4) does not exist.
+(i,j,k) must be within (1,1,1) to (10,14,5).
+
+2004-07-30 15:04:41     File: grid2.cpp  Line: 208
+Block (15,12,5) does not exist.
+(i,j,k) must be within (1,1,1) to (10,14,5).
+
+2004-07-30 15:04:41     File: grid2.cpp  Line: 208
+Block (17,22,4) does not exist.
+(i,j,k) must be within (1,1,1) to (10,14,5).
+
+2004-07-30 15:05:17     File: grid2.cpp  Line: 208
+Block (10,22,4) does not exist.
+(i,j,k) must be within (1,1,1) to (10,14,5).
+
+2004-07-30 15:05:19     File: grid2.cpp  Line: 208
+Block (10,22,5) does not exist.
+(i,j,k) must be within (1,1,1) to (10,14,5).
+
+2004-07-30 15:05:19     File: grid2.cpp  Line: 208
+Block (9,17,4) does not exist.
+(i,j,k) must be within (1,1,1) to (10,14,5).
+
+2004-07-30 15:05:19     File: grid2.cpp  Line: 208
+Block (9,17,5) does not exist.
+(i,j,k) must be within (1,1,1) to (10,14,5).
+
+2004-07-30 15:05:20     File: grid2.cpp  Line: 208
+Block (17,11,3) does not exist.
+(i,j,k) must be within (1,1,1) to (10,14,5).
+
+2004-07-30 15:05:20     File: grid2.cpp  Line: 208
+Block (17,11,4) does not exist.
+(i,j,k) must be within (1,1,1) to (10,14,5).
+
+2004-07-30 15:05:20     File: grid2.cpp  Line: 208
+Block (11,24,3) does not exist.
+(i,j,k) must be within (1,1,1) to (10,14,5).
+
+2004-07-30 15:05:20     File: grid2.cpp  Line: 208
+Block (11,24,4) does not exist.
+(i,j,k) must be within (1,1,1) to (10,14,5).
+
+2004-07-30 15:05:20     File: grid2.cpp  Line: 208
+Block (15,12,4) does not exist.
+(i,j,k) must be within (1,1,1) to (10,14,5).
+
+2004-07-30 15:05:21     File: grid2.cpp  Line: 208
+Block (15,12,5) does not exist.
+(i,j,k) must be within (1,1,1) to (10,14,5).
+
+2004-07-30 15:05:21     File: grid2.cpp  Line: 208
+Block (17,22,4) does not exist.
+(i,j,k) must be within (1,1,1) to (10,14,5).
+
+2004-07-30 15:56:17     File: propmodifydlg.cpp  Line: 405
+'From' value should be less than or equal to 'To' value.
+
+2004-07-30 15:56:22     File: propmodifydlg.cpp  Line: 412
+Value should be between 1 and 5
+
+2004-07-30 16:05:41     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:06:06     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:06:23     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:06:35     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:06:40     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:06:48     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:06:58     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:07:13     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:07:19     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:07:27     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:07:39     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:07:50     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:07:56     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:08:02     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:08:11     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:08:19     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:08:28     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:08:49     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:09:00     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:09:08     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:09:14     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:09:24     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:09:32     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:09:39     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:09:50     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:10:10     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:10:17     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:10:25     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:10:52     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:10:57     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:11:45     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:12:52     File: exportspatprop.cpp  Line: 502
+You have not specified any layers.
+
+2004-07-30 16:20:41     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:21:04     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:21:13     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:21:26     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:22:04     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:22:31     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:22:59     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:23:13     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:23:37     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:23:52     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:24:16     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:24:29     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:24:45     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:24:55     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:25:07     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:25:22     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:25:35     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:25:42     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:25:49     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:26:03     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:28:08     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-07-30 16:28:14     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-08-03 14:20:05     File: resgbview.cpp  Line: 2274
+Grid not found. File will not be saved.
+
+2004-08-04 15:38:01     File: resgbview.cpp  Line: 2274
+Grid not found. File will not be saved.
+
+2004-08-04 16:22:02     File: sr2yacc.C  Line: 152
+Syntax error on record 558 of sr2 file "punqs3".
+
+2004-08-04 16:22:04     File: alldsmgr.cpp  Line: 123
+Unable to construct requested DataSource object.
+
+2004-08-04 16:22:04     File: sr2open.cpp  Line: 92
+Unable to construct requested DataSource object.
+
+2004-08-04 16:22:21     File: sr2yacc.C  Line: 152
+Syntax error on record 558 of sr2 file "punqs3".
+
+2004-08-04 16:22:22     File: alldsmgr.cpp  Line: 123
+Unable to construct requested DataSource object.
+
+2004-08-04 16:22:22     File: sr2open.cpp  Line: 92
+Unable to construct requested DataSource object.
+
+2004-08-04 16:23:22     File: sr2yacc.C  Line: 152
+Syntax error on record 558 of sr2 file "punqs3".
+
+2004-08-04 16:23:25     File: alldsmgr.cpp  Line: 123
+Unable to construct requested DataSource object.
+
+2004-08-04 16:23:25     File: sr2open.cpp  Line: 92
+Unable to construct requested DataSource object.
+
+2004-08-04 17:08:36     File: resgbview.cpp  Line: 2274
+Grid not found. File will not be saved.
+
+2004-08-04 17:15:46     File: resgbview.cpp  Line: 2274
+Grid not found. File will not be saved.
+
+2004-08-05 08:57:23     File: resgbview.cpp  Line: 2274
+Grid not found. File will not be saved.
+
+2004-08-09 17:02:02     File: applic.cpp  Line: 72
+CMG programs currently require that a period (.) be used for
+the decimal point indicator.
+
+2004-09-06 09:05:40     File: applic.cpp  Line: 72
+CMG programs currently require that a period (.) be used for
+the decimal point indicator.
+
+2004-09-06 09:07:11     File: applic.cpp  Line: 72
+CMG programs currently require that a period (.) be used for
+the decimal point indicator.
+
+2004-09-08 15:06:14     File: applic.cpp  Line: 72
+CMG programs currently require that a period (.) be used for
+the decimal point indicator.
+
+2004-09-08 15:08:16     File: applic.cpp  Line: 72
+CMG programs currently require that a period (.) be used for
+the decimal point indicator.
+
+2004-09-08 16:17:14     File: leaseplanedlg.cpp  Line: 160
+Invalid flux direction.
+
+2004-09-08 16:21:41     File: referent.cpp  Line: 102
+A failure was encountered during the notification of the dependents during the notifyDependents operation.
+
+2004-09-13 15:40:17     File: aquifersdlg.cpp  Line: 166
+No region specified for Aquifer 2.
+
+2004-09-30 09:56:22     File: datasrc.cpp  Line: 6716
+Block property "Porosity: 8,6,4" has data for only one time step.
+
+2004-09-30 15:22:15
+Internal Implementation Message from ModelBuilder function GridPropArrayIndex.
+Dataset File: 'U:\mestrado\fase3\PUNQ_IMEX\test_001\PUNQS3.DAT'      Simulator: IMEX
+Grid array property PERMZ does not exist in the key file 'C:\Program Files\CMG\DICTS\mx200210.key'
+
+2004-09-30 15:22:15
+Internal Implementation Message from ModelBuilder function GridPropArrayIndex.
+Dataset File: 'U:\mestrado\fase3\PUNQ_IMEX\test_001\PUNQS3.DAT'      Simulator: IMEX
+Grid array property PERMZ does not exist in the key file 'C:\Program Files\CMG\DICTS\mx200210.key'
+
+2004-09-30 15:24:46
+Internal Implementation Message from ModelBuilder function GridPropArrayIndex.
+Dataset File: 'U:\mestrado\fase3\PUNQ_IMEX\test_001\PUNQS3.DAT'      Simulator: IMEX
+Grid array property PERMZ does not exist in the key file 'C:\Program Files\CMG\DICTS\mx200210.key'
+
+2004-09-30 15:24:46
+Internal Implementation Message from ModelBuilder function GridPropArrayIndex.
+Dataset File: 'U:\mestrado\fase3\PUNQ_IMEX\test_001\PUNQS3.DAT'      Simulator: IMEX
+Grid array property PERMZ does not exist in the key file 'C:\Program Files\CMG\DICTS\mx200210.key'
+
+2004-09-30 15:25:36
+Internal Implementation Message from ModelBuilder function GridPropArrayIndex.
+Dataset File: 'U:\mestrado\fase3\PUNQ_IMEX\test_001\PUNQS3.DAT'      Simulator: IMEX
+Grid array property PERMZ does not exist in the key file 'C:\Program Files\CMG\DICTS\mx200210.key'
+
+2004-09-30 15:25:36
+Internal Implementation Message from ModelBuilder function GridPropArrayIndex.
+Dataset File: 'U:\mestrado\fase3\PUNQ_IMEX\test_001\PUNQS3.DAT'      Simulator: IMEX
+Grid array property PERMZ does not exist in the key file 'C:\Program Files\CMG\DICTS\mx200210.key'
+
+2004-09-30 15:25:39
+Internal Implementation Message from ModelBuilder function GridPropArrayIndex.
+Dataset File: 'U:\mestrado\fase3\PUNQ_IMEX\test_001\PUNQS3.DAT'      Simulator: IMEX
+Grid array property PERMZ does not exist in the key file 'C:\Program Files\CMG\DICTS\mx200210.key'
+
+2004-09-30 15:25:39
+Internal Implementation Message from ModelBuilder function GridPropArrayIndex.
+Dataset File: 'U:\mestrado\fase3\PUNQ_IMEX\test_001\PUNQS3.DAT'      Simulator: IMEX
+Grid array property PERMZ does not exist in the key file 'C:\Program Files\CMG\DICTS\mx200210.key'
+
+2004-09-30 15:26:07
+Internal Implementation Message from ModelBuilder function GridPropArrayIndex.
+Dataset File: 'U:\mestrado\fase3\PUNQ_IMEX\test_001\PUNQS3.DAT'      Simulator: IMEX
+Grid array property PERMZ does not exist in the key file 'C:\Program Files\CMG\DICTS\mx200210.key'
+
+2004-09-30 15:26:07
+Internal Implementation Message from ModelBuilder function GridPropArrayIndex.
+Dataset File: 'U:\mestrado\fase3\PUNQ_IMEX\test_001\PUNQS3.DAT'      Simulator: IMEX
+Grid array property PERMZ does not exist in the key file 'C:\Program Files\CMG\DICTS\mx200210.key'
+
+2004-09-30 15:26:16
+Internal Implementation Message from ModelBuilder function GridPropArrayIndex.
+Dataset File: 'U:\mestrado\fase3\PUNQ_IMEX\test_001\PUNQS3.DAT'      Simulator: IMEX
+Grid array property PERMZ does not exist in the key file 'C:\Program Files\CMG\DICTS\mx200210.key'
+
+2004-09-30 15:26:16
+Internal Implementation Message from ModelBuilder function GridPropArrayIndex.
+Dataset File: 'U:\mestrado\fase3\PUNQ_IMEX\test_001\PUNQS3.DAT'      Simulator: IMEX
+Grid array property PERMZ does not exist in the key file 'C:\Program Files\CMG\DICTS\mx200210.key'
+
+2004-10-04 09:32:37
+Internal Implementation Message from ModelBuilder function GridPropArrayIndex.
+Dataset File: 'U:\mestrado\fase3\PUNQ_IMEX\test_001\PUNQS3.DAT'      Simulator: IMEX
+Grid array property PERMZ does not exist in the key file 'C:\Program Files\CMG\DICTS\mx200210.key'
+
+2004-10-04 09:32:37
+Internal Implementation Message from ModelBuilder function GridPropArrayIndex.
+Dataset File: 'U:\mestrado\fase3\PUNQ_IMEX\test_001\PUNQS3.DAT'      Simulator: IMEX
+Grid array property PERMZ does not exist in the key file 'C:\Program Files\CMG\DICTS\mx200210.key'
+
+2004-10-04 09:35:01
+Internal Implementation Message from ModelBuilder function GridPropArrayIndex.
+Dataset File: 'U:\mestrado\fase3\PUNQ_IMEX\test_001\PUNQS3.DAT'      Simulator: IMEX
+Grid array property PERMZ does not exist in the key file 'C:\Program Files\CMG\DICTS\mx200210.key'
+
+2004-10-04 09:35:01
+Internal Implementation Message from ModelBuilder function GridPropArrayIndex.
+Dataset File: 'U:\mestrado\fase3\PUNQ_IMEX\test_001\PUNQS3.DAT'      Simulator: IMEX
+Grid array property PERMZ does not exist in the key file 'C:\Program Files\CMG\DICTS\mx200210.key'
+
+2004-10-04 09:40:47
+Internal Implementation Message from ModelBuilder function GridPropArrayIndex.
+Dataset File: 'U:\mestrado\fase3\PUNQ_IMEX\test_001\PUNQS3.DAT'      Simulator: IMEX
+Grid array property PERMZ does not exist in the key file 'C:\Program Files\CMG\DICTS\mx200210.key'
+
+2004-10-04 09:40:47
+Internal Implementation Message from ModelBuilder function GridPropArrayIndex.
+Dataset File: 'U:\mestrado\fase3\PUNQ_IMEX\test_001\PUNQS3.DAT'      Simulator: IMEX
+Grid array property PERMZ does not exist in the key file 'C:\Program Files\CMG\DICTS\mx200210.key'
+
+2004-10-04 09:49:21
+Internal Implementation Message from ModelBuilder function GridPropArrayIndex.
+Dataset File: 'U:\mestrado\fase3\PUNQ_IMEX\test_001\PUNQS3.DAT'      Simulator: IMEX
+Grid array property PERMZ does not exist in the key file 'C:\Program Files\CMG\DICTS\mx200210.key'
+
+2004-10-04 09:49:21
+Internal Implementation Message from ModelBuilder function GridPropArrayIndex.
+Dataset File: 'U:\mestrado\fase3\PUNQ_IMEX\test_001\PUNQS3.DAT'      Simulator: IMEX
+Grid array property PERMZ does not exist in the key file 'C:\Program Files\CMG\DICTS\mx200210.key'
+
+2004-10-04 09:49:51
+Internal Implementation Message from ModelBuilder function GridPropArrayIndex.
+Dataset File: 'U:\mestrado\fase3\PUNQ_IMEX\test_001\PUNQS3.DAT'      Simulator: IMEX
+Grid array property PERMZ does not exist in the key file 'C:\Program Files\CMG\DICTS\mx200210.key'
+
+2004-10-04 09:49:51
+Internal Implementation Message from ModelBuilder function GridPropArrayIndex.
+Dataset File: 'U:\mestrado\fase3\PUNQ_IMEX\test_001\PUNQS3.DAT'      Simulator: IMEX
+Grid array property PERMZ does not exist in the key file 'C:\Program Files\CMG\DICTS\mx200210.key'
+
+2004-10-06 09:48:02     File: alldsmgr.cpp  Line: 123
+Unable to construct requested DataSource object.
+
+2004-10-06 09:48:02     File: sr2open.cpp  Line: 92
+Unable to construct requested DataSource object.
+
+2004-10-06 18:17:20     File: alldsmgr.cpp  Line: 123
+Unable to construct requested DataSource object.
+
+2004-10-06 18:17:20     File: sr2open.cpp  Line: 92
+Unable to construct requested DataSource object.
+
+2004-10-06 18:27:01     File: alldsmgr.cpp  Line: 123
+Unable to construct requested DataSource object.
+
+2004-10-06 18:27:01     File: sr2open.cpp  Line: 92
+Unable to construct requested DataSource object.
+
+2004-10-07 14:33:07     File: alldsmgr.cpp  Line: 123
+Unable to construct requested DataSource object.
+
+2004-10-07 14:33:07     File: sr2open.cpp  Line: 92
+Unable to construct requested DataSource object.
+
+2004-10-07 14:33:20     File: alldsmgr.cpp  Line: 123
+Unable to construct requested DataSource object.
+
+2004-10-07 14:33:20     File: sr2open.cpp  Line: 92
+Unable to construct requested DataSource object.
+
+2004-10-11 08:36:38     File: grid2.cpp  Line: 208
+Block (10,22,5) does not exist.
+(i,j,k) must be within (1,1,1) to (10,14,5).
+
+2004-10-11 08:36:42     File: welldata.cpp  Line: 526
+Error parsing a user block address.
+
+2004-10-11 08:36:42     File: welldata.cpp  Line: 400
+Implementation error.
+
+2004-10-11 08:36:42     File: grid2.cpp  Line: 208
+Block (11,24,4) does not exist.
+(i,j,k) must be within (1,1,1) to (10,14,5).
+
+2004-10-11 08:36:42     File: welldata.cpp  Line: 526
+Error parsing a user block address.
+
+2004-10-11 08:36:42     File: welldata.cpp  Line: 400
+Implementation error.
+
+2004-10-11 08:36:42     File: grid2.cpp  Line: 208
+Block (15,12,5) does not exist.
+(i,j,k) must be within (1,1,1) to (10,14,5).
+
+2004-10-11 08:36:42     File: welldata.cpp  Line: 526
+Error parsing a user block address.
+
+2004-10-11 08:36:42     File: welldata.cpp  Line: 400
+Implementation error.
+
+2004-10-11 08:36:42     File: grid2.cpp  Line: 208
+Block (17,22,4) does not exist.
+(i,j,k) must be within (1,1,1) to (10,14,5).
+
+2004-10-11 08:36:43     File: welldata.cpp  Line: 526
+Error parsing a user block address.
+
+2004-10-11 08:36:43     File: welldata.cpp  Line: 400
+Implementation error.
+
+2004-10-11 08:36:43     File: grid2.cpp  Line: 208
+Block (9,17,5) does not exist.
+(i,j,k) must be within (1,1,1) to (10,14,5).
+
+2004-10-11 08:36:43     File: welldata.cpp  Line: 526
+Error parsing a user block address.
+
+2004-10-11 08:36:43     File: welldata.cpp  Line: 400
+Implementation error.
+
+2004-10-11 08:36:43     File: grid2.cpp  Line: 208
+Block (17,11,4) does not exist.
+(i,j,k) must be within (1,1,1) to (10,14,5).
+
+2004-10-11 08:36:43     File: welldata.cpp  Line: 526
+Error parsing a user block address.
+
+2004-10-11 08:36:43     File: welldata.cpp  Line: 400
+Implementation error.
+
+2004-11-12 15:30:14     File: resxyplotgroup.cpp  Line: 539
+A curve with given description already exists.
+
+2004-11-12 15:30:16     File: resxyview.cpp  Line: 833
+No curve added.
+
+2004-12-28 09:51:40     File: resxyplotgroup.cpp  Line: 569
+A curve with given description already exists.
+
+2004-12-28 09:51:45     File: resxyview.cpp  Line: 838
+No curve added.
+
+2005-01-26 10:48:32     File: restemplatefilesdlg.cpp  Line: 651
+'D:\flavio\mestrado\fase3\Modelo_truth_novo_grid\PUNQS3.irf' can only appear once in the list of files. Please select another file.
+
+2005-01-26 10:53:37     File: restemplatefilesdlg.cpp  Line: 495
+'C:\temp_flavio001\PUNQS3.irf' can only appear once in the list of files. Please select another file.
+
+2005-03-03 16:40:23     File: restemplatefilesdlg.cpp  Line: 651
+'D:\flavio\mestrado\fase3\Modelo_truth_novo_grid\PUNQS3.irf' can only appear once in the list of files. Please select another file.
+
+2005-03-25 10:22:43     File: restemplatefilesdlg.cpp  Line: 651
+'D:\flavio\mestrado\resultados_flavio\fase3\caixa60_lambda10_inicialmedia_8211it\PUNQS3_MELHOR.irf' can only appear once in the list of files. Please select another file.
+
+2005-03-25 10:23:45     File: restemplatefilesdlg.cpp  Line: 651
+'D:\flavio\mestrado\resultados_flavio\fase3\caixa60_lambda10_inicialmedia_8211it\PUNQS3_PIOR.irf' can only appear once in the list of files. Please select another file.
+
+2005-04-05 10:37:39     File: restemplatefilesdlg.cpp  Line: 651
+'D:\flavio\mestrado\fase3\Modelo_truth_novo_grid\PUNQS3.irf' can only appear once in the list of files. Please select another file.
+
+2005-04-05 10:37:42     File: restemplatefilesdlg.cpp  Line: 651
+'C:\temp_flavio001\PUNQS3_MELHOR.irf' can only appear once in the list of files. Please select another file.
+
+2005-05-03 09:42:51     File: restemplatefilesdlg.cpp  Line: 651
+'D:\flavio\mestrado\fase3\Modelo_truth_novo_grid\PUNQS3.irf' can only appear once in the list of files. Please select another file.
+
+2005-05-14 12:21:24     File: restemplatefilesdlg.cpp  Line: 651
+'D:\flavio\mestrado\resultados_fase3_final\caixa60_lambda-2\PUNQS3_MELHOR.irf' can only appear once in the list of files. Please select another file.
+
+2005-05-14 12:24:12     File: restemplatefilesdlg.cpp  Line: 651
+'D:\flavio\mestrado\resultados_fase3_final\caixa60_lambda-2\PUNQS3_PIOR.irf' can only appear once in the list of files. Please select another file.
+
+2005-05-26 16:43:44     File: colorscaledlg.cpp  Line: 218
+Value can not be zero for log scale
+

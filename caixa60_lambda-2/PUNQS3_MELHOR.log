@@ -1,0 +1,40 @@
+    Opened Log file     on unit 70
+    Opened LOG FILE         on unit 70, filename is 'C:\temp_flavio001\PUNQS3_MELHOR.log'
+ **************************************************
+ *                                                *
+ *                 IMEX  2002.10                  *
+ *        IMEX_2002_Annual_General_Release        *
+ *    Adaptive - Implicit Black Oil Simulator     *
+ *             2002-Apr-23   10:33:58             *
+ *                                                *
+ *           (c) Copyright 1977 - 2002            *
+ * Computer Modelling Group Ltd., Calgary, Canada *
+ *              All Rights Reserved               *
+ *                                                *
+ **************************************************
+
+*** Input/Output files specification :
+ 
+    Opened Scratch file     on unit 82
+    Opened data file        on unit 72, filename is 'PUNQS3_MELHOR.dat'
+
+    Storage Allocated For IMEX1  Common Block         138112 bytes
+    Storage Allocated For IMEX2  Common Block         714504 bytes
+    Storage Allocated For IMEX3  Common Block        1293260 bytes
+    Storage Allocated For KWCOM1  Common Block         33411 bytes
+    Storage Allocated For MXWELL Common Block        1131764 bytes
+    Storage Allocated For POINT  Common Block          54864 bytes
+    Storage Allocated For PTLOCAL  Common Block        55048 bytes
+    Storage Allocated For PRTCM  Common Block          42440 bytes
+    Storage Allocated For WMCOM1 Common Block        3015262 bytes
+
+    ==============================================================
+
+    Storage Allocated For All Common Blocks          6478665 bytes
+
+    Opened output file      on unit 73, filename is 'C:\temp_flavio001\PUNQS3_MELHOR.out'
+    Opened INDEX-OUT        on unit 74, filename is 'C:\temp_flavio001\PUNQS3_MELHOR.irf'
+    Opened MAIN-RESULTS-OUT on unit 76, filename is 'C:\temp_flavio001\PUNQS3_MELHOR.mrf'
+    Opened GRID scratchfile on unit 80
+
+    Storage Allocated For MXGR01 Common Block         22

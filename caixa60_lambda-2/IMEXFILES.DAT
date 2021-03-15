@@ -1,0 +1,16 @@
+c
+c
+c
+	Arquivo do IMEX a ser usado em cada iteração
+PUNQS3.DAT
+	Arquivos usados pelo REPORT para extrair as informações de WCUT, BHP e GOR
+PUNQS3_RPT_WCUT.DAT
+PUNQS3_RPT_BHP.DAT
+PUNQS3_RPT_GOR.DAT
+	Arquivos de saída do REPORT para pior e melhor modelo
+PUNQS3_RPT_WCUT.OUT
+PUNQS3_RPT_BHP.OUT
+PUNQS3_RPT_GOR.OUT
+	Arquivo do IMEX com o melhor e pior modelos
+PUNQS3_MELHOR.DAT
+PUNQS3_PIOR.DAT

@@ -1,5 +1,5 @@
 c
-c	Estatística dos modelos que estao dentro de um certo nivel de 
+c	Estatï¿½stica dos modelos que estao dentro de um certo nivel de 
 c	inundacao
 c
 	subroutine estat_inund(jpor, por_min, n_inund,DIR,NF,ESTINUND,

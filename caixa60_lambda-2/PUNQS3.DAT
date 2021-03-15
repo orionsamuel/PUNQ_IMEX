@@ -1,0 +1,981 @@
+*RESULTS SIMULATOR IMEX
+****************************************************************************
+**
+**              *IO
+**
+****************************************************************************
+** *------------------------------------------*
+** *                                          *
+** * BASE GRID MODEL WITH INPUT PARAMETERS    *
+** *                                          *
+** *------------------------------------------*
+*TITLE1 'PUNQ-S3 MODEL'
+*INUNIT *SI
+*OUTUNIT *SI
+*WSRF  *WELL  *TIME ** frequencia de gravacao nos arq. .IRF e MRF
+*WSRF  *GRID  0
+*WPRN *GRID 0
+*OUTPRN *GRID *NONE
+*OUTSRF *GRID *NONE  ** informacoes a serem gravadas nos arq. .IRF e MRF
+
+**------------------------------------------------------------
+**DIM  *MAX_AQUIFERS 2
+*DIM  *MAX_WELLS  20
+*DIM  *MAX_LAYERS  40
+**------------------------------------------------------------
+****************************************************************************
+**
+**              *GRID
+**
+****************************************************************************
+
+*GRID  *CORNER 10 14 5
+*KDIR *DOWN
+
+** -- PUT IN YOUR PORO, PERMX AND PERMZ
+*POR *ALL
+
+*INCLUDE 'DP_POR_IMEX.DAT'
+*PERMI *ALL
+*INCLUDE 'DP_PERMH_IMEX.DAT'
+*PERMJ *EQUALSI
+*PERMK *ALL
+*INCLUDE 'DIF_PERMZ.DAT'
+
+** ARQUIVO COM AS COORDENADAS
+*COORD
+*INCLUDE 'coord.DAT'
+
+** ARQUIVO COM OS NULL BLOCKS
+*NULL *ALL
+*INCLUDE 'NULL_BLOCKS_IMEX.DAT'         
+
+*CPOR 0.0000045
+*PRPOR 23500
+
+** DADOS DO AQUIFERO
+*INCLUDE 'AQUIFER.DAT'
+
+****************************************************************************
+**
+**              *MODEL
+**
+****************************************************************************
+
+*MODEL *BLACKOIL
+
+** RELATIVE PERMEABILITY AND CAPPILARY PRESSURE CURVES
+*PVT *BG 1
+4000  11.46 1.064 .02908   4.338 .0088   
+6000  17.89 1.078 .01886   3.878 .0092   
+8000  24.32 1.092 .01387   3.467 .0096   
+10000 30.76 1.106 .01093   3.1   .01     
+12000 37.19 1.12  .00899   2.771 .0104   
+14000 43.62 1.134 .00763   2.478 .0109   
+15000 46.84 1.141 .00709   2.343 .0111   
+16000 50.05 1.148 .00662   2.215 .0114   
+17000 53.27 1.155 .0062    2.095 .0116   
+18000 56.49 1.162 .00583   1.981 .0119   
+19000 59.7  1.169 .00551   1.873 .0121   
+20000 62.92 1.176 .00521   1.771 .0124   
+21000 66.13 1.183 .00495   1.674 .0126   
+22000 69.35 1.19  .00471   1.583 .0129   
+23000 72.57 1.197 .00449   1.497 .0132   
+23446 74    1.2   .0044    1.46  .0133   
+24500 80    1.22  .0041873 1.4   .0135363
+*COT 1
+23446 .0000011    
+25000 .0000011    
+30000 7.628929E-07
+*COT 1
+24500 7.48223E-07 
+30000 7.451565E-07
+*REFPW 23446
+*BWI 1.0042
+*CW .000000543
+*VWI .5
+*CVW .00000111
+*DENSITY *OIL 912.0
+*DENSITY *GAS 0.8266
+*DENSITY *WATER 1000.
+****************************************************************************
+**
+**              *ROCKFLUID
+**
+****************************************************************************
+
+*ROCKFLUID
+
+
+** PVT DATA
+
+
+** ROCK COMPRESSIBILITY
+**
+**    REF. PRES   COMPRESSIBILITY
+
+** SWITCH OFF OUTPUT OF ALL PROPS DATA
+
+*KROIL *STONE1 *SWSG
+*RPT 1
+*SGT
+0    0       .9   0   
+.1   7.7E-07 .625 0   
+.2   .000049 .4   0   
+.3   .00056  .225 0   
+.4   .0032   .1   0   
+.5   .012    .025 0   
+.6   .036    0    0   
+.7   .091    0    0   
+.8   .2      0    0   
+*SWT
+.2   0      .9   0   
+.3   .00024 .661 0   
+.4   .0039  .459 0   
+.5   .02    .294 0   
+.6   .062   .165 0   
+.7   .152   .073 0   
+.8   .316   .018 0   
+.9   .585   0    0   
+1    1      0    0   
+****************************************************************************
+**
+**              *INITIAL
+**
+****************************************************************************
+
+*INITIAL
+
+
+**    DATUM  DATUM   OWC    OWC    GOC    GOC    RSVD   RVVD   SOLN
+**    DEPTH  PRESS  DEPTH   PCOW  DEPTH   PCOG  TABLE  TABLE   METH
+
+*VERTICAL *BLOCK_CENTER *WATER_OIL_GAS
+*REFDEPTH 2355.00
+*REFPRES 23446
+*DWOC 2395.0
+*DGOC 2355.0
+*PBT 1
+2175 23446
+2496 23446
+
+************************************
+*numerical
+
+*ncuts 20
+
+****************************************************************************
+**
+**              *RUN
+**
+****************************************************************************
+
+*RUN
+*DATE 1967 1 01
+**------------------- PRODUCTION SCHEDULE ----------------------------
+
+*GROUP 'G1' *ATTACHTO 'FIELD'
+
+*WELL 1 'PRO-1' *VERT 5 11 *ATTACHTO 'G1'
+*PRODUCER 1
+*XFLOW-MODEL 'PRO-1' *FULLY-MIXED
+*OPERATE *MAX *STO 100.
+**             rad  geofac wfrac skin
+*GEOMETRY *K 0.075 0.37  1.0 5.0
+*PERFV *GEO 1
+4 1.0
+5 1.0
+*OPEN 1
+
+*WELL 2 'PRO-4' *VERT  5 9 *ATTACHTO 'G1'
+*PRODUCER 2
+*XFLOW-MODEL 'PRO-4' *FULLY-MIXED
+*OPERATE *MAX *STO 100.
+**             rad  geofac wfrac skin
+*GEOMETRY *K 0.075 0.37  1.0 5.0
+*PERFV *GEO 2
+4 1.0
+5 1.0
+*OPEN 2
+
+*WELL 3 'PRO-5' *VERT  9 6 *ATTACHTO 'G1'
+*PRODUCER 3
+*XFLOW-MODEL 'PRO-5' *FULLY-MIXED
+*OPERATE *MAX *STO 100.
+**             rad  geofac wfrac skin
+*GEOMETRY *K 0.075 0.6  0.1 5.0
+*PERFV *GEO 3
+3 1.0
+4 1.0
+*OPEN 3
+
+*WELL 4 'PRO-11' *VERT  6 12 *ATTACHTO 'G1'
+*PRODUCER 4
+*XFLOW-MODEL 'PRO-11' *FULLY-MIXED
+*OPERATE *MAX *STO 100.
+**             rad  geofac wfrac skin
+*GEOMETRY *K 0.075 0.37  1.0 5.0
+*PERFV *GEO 4
+3 1.0
+4 1.0
+*OPEN 4
+
+*WELL 5 'PRO-12' *VERT  8 6 *ATTACHTO 'G1'
+*PRODUCER 5
+*XFLOW-MODEL 'PRO-12' *FULLY-MIXED
+*OPERATE *MAX *STO 100.
+**             rad  geofac wfrac skin
+*GEOMETRY *K 0.075 0.26  0.5 5.0
+*PERFV *GEO 5
+4 1.0
+5 1.0
+*OPEN 5
+
+*WELL 6 'PRO-15' *VERT  9 11 *ATTACHTO 'G1'
+*PRODUCER 6
+*XFLOW-MODEL 'PRO-15' *FULLY-MIXED
+*OPERATE *MAX *STO 100.
+**             rad  geofac wfrac skin
+*GEOMETRY *K 0.075 0.37  1.0 5.0
+*PERFV *GEO 6
+4 1.0
+*OPEN 6
+*TIME .01
+
+*OPEN 'PRO-1'
+*OPEN 'PRO-4'
+*OPEN 'PRO-5'
+*OPEN 'PRO-11'
+*OPEN 'PRO-12'
+*OPEN 'PRO-15'
+
+*TARGET *STO
+'PRO-1'
+100.0
+*TARGET *STO
+'PRO-4'
+100.0
+*TARGET *STO
+'PRO-5'
+100.0
+*TARGET *STO
+'PRO-11'
+100.0
+*TARGET *STO
+'PRO-12'
+100.0
+*TARGET *STO
+'PRO-15'
+100.0
+
+*TIME 1.01
+
+*DATE 1967 2 1
+
+*DATE 1967 3 1
+
+*DATE 1967 4 1
+
+*TARGET *STO
+'PRO-1'
+200.0
+*TARGET *STO
+'PRO-4'
+200.0
+*TARGET *STO
+'PRO-5'
+200.0
+*TARGET *STO
+'PRO-11'
+200.0
+*TARGET *STO
+'PRO-12'
+200.0
+*TARGET *STO
+'PRO-15'
+200.0
+
+*TIME 91
+
+*DATE 1967 5 1
+
+*DATE 1967 6 1
+
+*DATE 1967 7 1
+
+*TARGET *STO
+'PRO-1'
+100.0
+*TARGET *STO
+'PRO-4'
+100.0
+*TARGET *STO
+'PRO-5'
+100.0
+*TARGET *STO
+'PRO-11'
+100.0
+*TARGET *STO
+'PRO-12'
+100.0
+*TARGET *STO
+'PRO-15'
+100.0
+
+*TIME 182
+
+*DATE 1967 8 1
+
+*DATE 1967 9 1
+
+*DATE 1967 10 1
+
+*TARGET *STO
+'PRO-1'
+50.0
+*TARGET *STO
+'PRO-4'
+50.0
+*TARGET *STO
+'PRO-5'
+50.0
+*TARGET *STO
+'PRO-11'
+50.0
+*TARGET *STO
+'PRO-12'
+50.0
+*TARGET *STO
+'PRO-15'
+50.0
+
+*TIME 274
+
+*DATE 1967 11 1
+
+*DATE 1967 12 1
+
+*DATE 1968 1 1
+
+** END FOR TEST PURPOSES
+
+*TARGET *STO
+'PRO-1'
+0.0
+*TARGET *STO
+'PRO-4'
+0.0
+*TARGET *STO
+'PRO-5'
+0.0
+*TARGET *STO
+'PRO-11'
+0.0
+*TARGET *STO
+'PRO-12'
+0.0
+*TARGET *STO
+'PRO-15'
+0.0
+
+*TIME 366
+
+** JUST TO INCLUDE SHUT-IN
+
+*DATE 1969 1 1
+*DATE 1970 1 1
+*DATE 1971 1 1
+
+** END FOR BUILDUP-TEST PURPOSES
+
+*TARGET *STO
+'PRO-1'
+150.0
+*TARGET *STO
+'PRO-4'
+150.0
+*TARGET *STO
+'PRO-5'
+150.0
+*TARGET *STO
+'PRO-11'
+150.0
+*TARGET *STO
+'PRO-12'
+150.0
+*TARGET *STO
+'PRO-15'
+150.0
+
+*TIME 1462
+
+*DATE 1971 7 1
+
+** WORK OVER --
+
+*DATE 1972 1 1
+
+*TARGET *STO
+'PRO-1'
+0.0
+*TARGET *STO
+'PRO-4'
+0.0
+*TARGET *STO
+'PRO-5'
+0.0
+*TARGET *STO
+'PRO-11'
+0.0
+*TARGET *STO
+'PRO-12'
+0.0
+*TARGET *STO
+'PRO-15'
+0.0
+
+*TIME 1827
+
+*DATE 1972 1 15
+
+*TARGET *STO
+'PRO-1'
+150.0
+*TARGET *STO
+'PRO-4'
+150.0
+*TARGET *STO
+'PRO-5'
+150.0
+*TARGET *STO
+'PRO-11'
+150.0
+*TARGET *STO
+'PRO-12'
+150.0
+*TARGET *STO
+'PRO-15'
+150.0
+
+*TIME 1841
+
+*DATE 1972 7 1
+*DATE 1973 1 1
+
+*TARGET *STO
+'PRO-1'
+0.0
+*TARGET *STO
+'PRO-4'
+0.0
+*TARGET *STO
+'PRO-5'
+0.0
+*TARGET *STO
+'PRO-11'
+0.0
+*TARGET *STO
+'PRO-12'
+0.0
+*TARGET *STO
+'PRO-15'
+0.0
+
+*TIME 2193
+
+*DATE 1973 1 15
+
+*TARGET *STO
+'PRO-1'
+150.0
+*TARGET *STO
+'PRO-4'
+150.0
+*TARGET *STO
+'PRO-5'
+150.0
+*TARGET *STO
+'PRO-11'
+150.0
+*TARGET *STO
+'PRO-12'
+150.0
+*TARGET *STO
+'PRO-15'
+150.0
+
+*TIME 2207
+
+*DATE 1973 7 1
+*DATE 1974 1 1
+
+*TARGET *STO
+'PRO-1'
+0.0
+*TARGET *STO
+'PRO-4'
+0.0
+*TARGET *STO
+'PRO-5'
+0.0
+*TARGET *STO
+'PRO-11'
+0.0
+*TARGET *STO
+'PRO-12'
+0.0
+*TARGET *STO
+'PRO-15'
+0.0
+
+*TIME 2558
+
+*DATE 1974 1 15
+
+*TARGET *STO
+'PRO-1'
+150.0
+*TARGET *STO
+'PRO-4'
+150.0
+*TARGET *STO
+'PRO-5'
+150.0
+*TARGET *STO
+'PRO-11'
+150.0
+*TARGET *STO
+'PRO-12'
+150.0
+*TARGET *STO
+'PRO-15'
+150.0
+
+*TIME 2572
+
+*DATE 1974 7 1
+*DATE 1975 1 1
+
+*TARGET *STO
+'PRO-1'
+0.0
+*TARGET *STO
+'PRO-4'
+0.0
+*TARGET *STO
+'PRO-5'
+0.0
+*TARGET *STO
+'PRO-11'
+0.0
+*TARGET *STO
+'PRO-12'
+0.0
+*TARGET *STO
+'PRO-15'
+0.0
+
+*TIME 2923
+
+*DATE 1975 1 15
+
+*TARGET *STO
+'PRO-1'
+150.0
+*TARGET *STO
+'PRO-4'
+150.0
+*TARGET *STO
+'PRO-5'
+150.0
+*TARGET *STO
+'PRO-11'
+150.0
+*TARGET *STO
+'PRO-12'
+150.0
+*TARGET *STO
+'PRO-15'
+150.0
+
+*TIME 2937
+
+*DATE 1975 7 1
+*DATE 1976 1 1
+
+*TARGET *STO
+'PRO-1'
+0.0
+*TARGET *STO
+'PRO-4'
+0.0
+*TARGET *STO
+'PRO-5'
+0.0
+*TARGET *STO
+'PRO-11'
+0.0
+*TARGET *STO
+'PRO-12'
+0.0
+*TARGET *STO
+'PRO-15'
+0.0
+
+*TIME 3288
+
+*DATE 1976 1 15
+
+*TARGET *STO
+'PRO-1'
+150.0
+*TARGET *STO
+'PRO-4'
+150.0
+*TARGET *STO
+'PRO-5'
+150.0
+*TARGET *STO
+'PRO-11'
+150.0
+*TARGET *STO
+'PRO-12'
+150.0
+*TARGET *STO
+'PRO-15'
+150.0
+
+*TIME 3302
+
+*DATE 1976 7 1
+*DATE 1977 1 1
+
+*TARGET *STO
+'PRO-1'
+0.0
+*TARGET *STO
+'PRO-4'
+0.0
+*TARGET *STO
+'PRO-5'
+0.0
+*TARGET *STO
+'PRO-11'
+0.0
+*TARGET *STO
+'PRO-12'
+0.0
+*TARGET *STO
+'PRO-15'
+0.0
+
+*TIME 3654
+
+*DATE 1977 1 15
+
+*TARGET *STO
+'PRO-1'
+150.0
+*TARGET *STO
+'PRO-4'
+150.0
+*TARGET *STO
+'PRO-5'
+150.0
+*TARGET *STO
+'PRO-11'
+150.0
+*TARGET *STO
+'PRO-12'
+150.0
+*TARGET *STO
+'PRO-15'
+150.0
+
+*TIME 3668
+
+*DATE 1977 7 1
+*DATE 1978 1 1
+
+*TARGET *STO
+'PRO-1'
+0.0
+*TARGET *STO
+'PRO-4'
+0.0
+*TARGET *STO
+'PRO-5'
+0.0
+*TARGET *STO
+'PRO-11'
+0.0
+*TARGET *STO
+'PRO-12'
+0.0
+*TARGET *STO
+'PRO-15'
+0.0
+
+*TIME 4019
+
+*DATE 1978 1 15
+
+*TARGET *STO
+'PRO-1'
+150.0
+*TARGET *STO
+'PRO-4'
+150.0
+*TARGET *STO
+'PRO-5'
+150.0
+*TARGET *STO
+'PRO-11'
+150.0
+*TARGET *STO
+'PRO-12'
+150.0
+*TARGET *STO
+'PRO-15'
+150.0
+
+*TIME 4033
+
+*DATE 1978 7 1
+*DATE 1979 1 1
+
+*TARGET *STO
+'PRO-1'
+0.0
+*TARGET *STO
+'PRO-4'
+0.0
+*TARGET *STO
+'PRO-5'
+0.0
+*TARGET *STO
+'PRO-11'
+0.0
+*TARGET *STO
+'PRO-12'
+0.0
+*TARGET *STO
+'PRO-15'
+0.0
+
+*TIME 4384
+
+*DATE 1979 1 15
+
+*TARGET *STO
+'PRO-1'
+150.0
+*TARGET *STO
+'PRO-4'
+150.0
+*TARGET *STO
+'PRO-5'
+150.0
+*TARGET *STO
+'PRO-11'
+150.0
+*TARGET *STO
+'PRO-12'
+150.0
+*TARGET *STO
+'PRO-15'
+150.0
+
+*TIME 4398
+
+*DATE 1979 7 1
+*DATE 1980 1 1
+
+*TARGET *STO
+'PRO-1'
+0.0
+*TARGET *STO
+'PRO-4'
+0.0
+*TARGET *STO
+'PRO-5'
+0.0
+*TARGET *STO
+'PRO-11'
+0.0
+*TARGET *STO
+'PRO-12'
+0.0
+*TARGET *STO
+'PRO-15'
+0.0
+
+*TIME 4749
+
+*DATE 1980 1 15
+
+*TARGET *STO
+'PRO-1'
+150.0
+*TARGET *STO
+'PRO-4'
+150.0
+*TARGET *STO
+'PRO-5'
+150.0
+*TARGET *STO
+'PRO-11'
+150.0
+*TARGET *STO
+'PRO-12'
+150.0
+*TARGET *STO
+'PRO-15'
+150.0
+
+*TIME 4763
+
+*DATE 1980 7 1
+*DATE 1981 1 1
+
+*TARGET *STO
+'PRO-1'
+0.0
+*TARGET *STO
+'PRO-4'
+0.0
+*TARGET *STO
+'PRO-5'
+0.0
+*TARGET *STO
+'PRO-11'
+0.0
+*TARGET *STO
+'PRO-12'
+0.0
+*TARGET *STO
+'PRO-15'
+0.0
+
+*TIME 5115
+
+*DATE 1981 1 15
+
+*TARGET *STO
+'PRO-1'
+150.0
+*TARGET *STO
+'PRO-4'
+150.0
+*TARGET *STO
+'PRO-5'
+150.0
+*TARGET *STO
+'PRO-11'
+150.0
+*TARGET *STO
+'PRO-12'
+150.0
+*TARGET *STO
+'PRO-15'
+150.0
+
+*TIME 5129
+
+*DATE 1981 7 1
+*DATE 1982 1 1
+
+*TARGET *STO
+'PRO-1'
+0.0
+*TARGET *STO
+'PRO-4'
+0.0
+*TARGET *STO
+'PRO-5'
+0.0
+*TARGET *STO
+'PRO-11'
+0.0
+*TARGET *STO
+'PRO-12'
+0.0
+*TARGET *STO
+'PRO-15'
+0.0
+
+*TIME 5480
+
+*DATE 1982 1 15
+
+*TARGET *STO
+'PRO-1'
+150.0
+*TARGET *STO
+'PRO-4'
+150.0
+*TARGET *STO
+'PRO-5'
+150.0
+*TARGET *STO
+'PRO-11'
+150.0
+*TARGET *STO
+'PRO-12'
+150.0
+*TARGET *STO
+'PRO-15'
+150.0
+
+*TIME 5494
+
+*DATE 1982 7 1
+*DATE 1983 1 1
+
+*TARGET *STO
+'PRO-1'
+0.0
+*TARGET *STO
+'PRO-4'
+0.0
+*TARGET *STO
+'PRO-5'
+0.0
+*TARGET *STO
+'PRO-11'
+0.0
+*TARGET *STO
+'PRO-12'
+0.0
+*TARGET *STO
+'PRO-15'
+0.0
+
+*TIME 5845
+
+*DATE 1983 1 15
+
+*TARGET *STO
+'PRO-1'
+150.0
+*TARGET *STO
+'PRO-4'
+150.0
+*TARGET *STO
+'PRO-5'
+150.0
+*TARGET *STO
+'PRO-11'
+150.0
+*TARGET *STO
+'PRO-12'
+150.0
+*TARGET *STO
+'PRO-15'
+150.0
+
+*TIME 5859
+
+*DATE 1983 7 1
+
+*STOP

@@ -1,0 +1,51 @@
+    Opened Log file     on unit 70
+    Opened LOG FILE         on unit 70, filename is 'C:\temp_flavio001\PUNQS3.log'
+ **************************************************
+ *                                                *
+ *                 IMEX  2002.10                  *
+ *        IMEX_2002_Annual_General_Release        *
+ *    Adaptive - Implicit Black Oil Simulator     *
+ *             2002-Apr-23   10:33:58             *
+ *                                                *
+ *           (c) Copyright 1977 - 2002            *
+ * Computer Modelling Group Ltd., Calgary, Canada *
+ *              All Rights Reserved               *
+ *                                                *
+ **************************************************
+
+*** Input/Output files specification :
+ 
+    Opened Scratch file     on unit 82
+    Opened data file        on unit 72, filename is 'PUNQS3.DAT'
+
+    Storage Allocated For IMEX1  Common Block         133556 bytes
+    Storage Allocated For IMEX2  Common Block         697852 bytes
+    Storage Allocated For IMEX3  Common Block        1278473 bytes
+    Storage Allocated For KWCOM1  Common Block         33411 bytes
+    Storage Allocated For MXWELL Common Block        1131672 bytes
+    Storage Allocated For POINT  Common Block          53508 bytes
+    Storage Allocated For PTLOCAL  Common Block        54864 bytes
+    Storage Allocated For PRTCM  Common Block          42026 bytes
+    Storage Allocated For WMCOM1 Common Block        3015262 bytes
+
+    ==============================================================
+
+    Storage Allocated For All Common Blocks          6440624 bytes
+
+    Opened output file      on unit 73, filename is 'C:\temp_flavio001\PUNQS3.out'
+    Opened INDEX-OUT        on unit 74, filename is 'C:\temp_flavio001\PUNQS3.irf'
+    Opened MAIN-RESULTS-OUT on unit 76, filename is 'C:\temp_flavio001\PUNQS3.mrf'
+    Opened GRID scratchfile on unit 80
+
+ =================== FATAL ERROR (from subroutine: GRREVU) ====================
+  Some Porosity values were non-fractional; that is, were not between 0 to 1.
+  Check your data and/or see your User's Manual.
+     0 Warning messages.    1 Error messages.
+ ==============================================================================
+
+  Terminating simulation: Fatal error.
+
+  End of Simulation: Abnormal Termination 
+
+  CPU Time:          1.60 seconds
+  Elapsed Time:      3.02 seconds

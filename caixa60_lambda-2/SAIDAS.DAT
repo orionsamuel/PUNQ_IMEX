@@ -1,0 +1,9 @@
+c
+c
+c
+	Arquivo com (possíveis) mensagens de erro do modelos
+ERRORLOG.DAT
+	Flag e arquivo com a saida dos modelos do COMPLEX
+T, MODCOMPLX.DAT
+	Flag e arquivo com saida dos modelos inundados
+T, MODINUND.DAT

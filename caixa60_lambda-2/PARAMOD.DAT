@@ -1,0 +1,18 @@
+C	Arquivo com os parâmentros s serem invertidos
+C	Os arquivo abaixo são modificados a cada iteração do COMPLEX
+C
+	primeiro paramâmetro a ser invertido: POROSIDADE
+PORO.DAT
+	Segundo parâmetro: PERMABILIDADE Kx,Ky (supondo isotrópico em x,y)
+PERMX.DAT
+	Terceiro parâmetro: PERMEABILIDADE Kz
+PERMZ.DAT
+	Arquivos com a porosidade do melhor e pior modelos
+POROMELHOR.DAT
+POROPIOR.DAT
+	Arquivos com as permeabilidades do melhor e pior modelos (Kx=Ky => isotropico)
+PERMXMELHOR.DAT
+PERMXPIOR.DAT
+	Arquivos com as permeabilidades do melhor e pir modelos (Kz)
+PERMZMELHOR.DAT
+PERMZPIOR.DAT

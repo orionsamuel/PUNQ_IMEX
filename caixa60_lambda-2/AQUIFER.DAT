@@ -1,0 +1,43 @@
+AQUIFER  REGION 10:10 2:2 3:5 JDIR
+         REGION 9:9 2:2 3:5 JDIR
+         REGION 8:8 2:2 3:5 IDIR
+         REGION 7:7 3:3 3:5 JDIR
+         REGION 6:6 3:3 3:5 IDIR
+         REGION 5:5 4:4 3:5 IDIR
+         REGION 4:4 5:5 3:5 IDIR
+         REGION 4:4 6:6 3:5 IDIR
+         REGION 3:3 7:7 3:5 IDIR
+         REGION 3:3 8:8 3:5 IDIR
+         REGION 2:2 9:9 3:5 IDIR
+         REGION 2:2 10:10 3:5 IDIR
+         REGION 2:2 11:11 3:5 IDIR
+         REGION 2:2 12:12 3:5 IDIR
+         REGION 2:2 13:13 3:5 IDIR
+         REGION 3:3 13:13 3:5 JDIR
+         REGION 4:4 14:14 3:5 JDIR
+         REGION 5:5 14:14 3:5 JDIR
+         REGION 6:6 14:14 3:5 JDIR
+         REGION 7:7 14:14 3:5 JDIR
+
+   AQPROP 19.6 0.2115 137.5 3000 0.263889
+
+AQUIFER  REGION 10:10 1:1 1:2 JDIR
+         REGION 9:9 1:1 1:2 JDIR
+         REGION 8:8 1:1 1:2 IDIR
+         REGION 7:7 2:2 1:2 JDIR
+         REGION 6:6 2:2 1:2 IDIR
+         REGION 5:5 3:3 1:2 IDIR
+         REGION 4:4 4:4 1:2 IDIR
+         REGION 3:3 5:5 1:2 IDIR
+         REGION 3:3 6:6 1:2 IDIR
+         REGION 3:3 7:7 1:2 IDIR
+         REGION 2:2 8:8 1:2 IDIR
+         REGION 2:2 9:9 1:2 IDIR
+         REGION 1:1 12:12 1:2 IDIR
+         REGION 1:1 13:13 1:2 IDIR
+         REGION 2:2 14:14 1:2 JDIR
+         REGION 3:3 14:14 1:2 JDIR
+
+   AQPROP 6 0.2115 137.5 3200 0.263889
+
+

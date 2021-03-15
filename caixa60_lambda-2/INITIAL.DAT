@@ -1,0 +1,25 @@
+c COMENTÁRIO
+c COMENTÁRIO
+c COMENTÁRIO
+	Arquivo com leitura inicial de parâmetros
+INPAR.DAT
+	Arquivo com o ínfimos dos parâmetros
+INF_POR.DAT
+	Arquivo com o supremo dos parâmetros
+SUP_POR.DAT
+	Arquivo com os blocos ativos/nulos (vetor i,j,k)
+ACTIVE_BLOCKS.DAT
+	Arquivo com o truth model (observações de wcut, bhp e gor)
+TRUTH_MODEL.DAT
+	Arquivo de documentação da simulação
+DOCUMENTACAO.DAT
+	Comecar o COMPLEX a partir de um "hot start"?
+F
+HOTSTART.DAT
+	Gerar um arquivo "hot start" para futuras rodadas?
+F
+HOTSTART.OUT
+	arquivo com os valores verdadeiros de porosidade e perm
+PORO_TRUTH.DAT
+PERMX_TRUTH.DAT
+PERMZ_TRUTH.DAT

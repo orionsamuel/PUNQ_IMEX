@@ -1,0 +1,6 @@
+	Numero total de blocos (n_c, n_l, n_z). Número de colunas, linhas e camadas
+700
+	Numeros de poços produtores e Numero de medidas a serem ajustadas (WCUT, BHP e GOR)
+6, 83, 83, 83
+	número de blocos ativos
+488
