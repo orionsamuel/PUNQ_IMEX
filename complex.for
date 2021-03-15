@@ -120,7 +120,7 @@ c     i = identification of momentaneous simplex's point
 c
 c------------------------------------------------------------------------------
 c
-	use DFPORT
+c	use DFPORT
 	character*200 DIR, PORODAT, PERMXDAT, PERMZDAT,PUNQS3DAT,
      1PUNQS3_RPT_WCUT_DAT, PUNQS3_RPT_WCUT_OUT, PUNQS3_RPT_BHP_DAT,
      1PUNQS3_RPT_BHP_OUT, PUNQS3_RPT_GOR_DAT, PUNQS3_RPT_GOR_OUT,
